@@ -24,7 +24,10 @@ server:
 # Logger Config
 logging:
   level:
+    root: warn
     com.lxy.mp.mapper: trace
+  pattern:
+    console: '%p%m%n'
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

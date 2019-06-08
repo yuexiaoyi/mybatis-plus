@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
  **/
 @Data
 public class User {
+
     private Long id;
 
     private String name;
@@ -22,5 +23,8 @@ public class User {
     private Long managerId;
 
     private LocalDateTime createTime;
+
+    @TableField(exist = false)
+    private  String remark;
 
 }
